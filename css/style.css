@@ -1,0 +1,38 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav.visible {
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.animate-slideRightToLeft {
+  animation: slideRightToLeft 0.5s ease forwards;
+}
+
+.about-gold{
+    color: #d2b356;
+}
